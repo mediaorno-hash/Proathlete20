@@ -44,7 +44,8 @@ export const WaitlistPage: React.FC<WaitlistPageProps> = ({
     profile: 'INDIVIDUAL ATHLETE' as ProfileType,
     sport: 'BASKETBALL',
     fullName: '',
-    email: ''
+    email: '',
+    message: ''
   });
 
   const t = {
@@ -66,7 +67,7 @@ export const WaitlistPage: React.FC<WaitlistPageProps> = ({
         items: [
           {
             title: "BE FIRST IN LINE",
-            desc: "Get priority updates and early access to the PRO ATHLETE Web Platform when it becomes available."
+            desc: "Get priority updates and early access to the PRO ATHLETE App when it becomes available."
           },
           {
             title: "TRAIN SMARTER, ANYWHERE",
@@ -128,22 +129,20 @@ export const WaitlistPage: React.FC<WaitlistPageProps> = ({
         continueBtn: "CONTINUE"
       },
       step3: {
-        title: "CONFIRM YOUR RESERVATION",
-        subtitle: "Enter your contact details to secure your spot and lock in your 10% launch discount.",
+        title: "RESERVE YOUR SPOT",
+        subtitle: "Enter your contact info to secure your early invitation.",
         selectedRole: "Selected Profile:",
         selectedSport: "Primary Sport:",
-        fullNameLabel: "Full Name",
+        fullNameLabel: "FULL NAME",
         fullNamePlaceholder: "e.g. Alex Henderson",
-        emailLabel: "Email Address",
+        emailLabel: "EMAIL ADDRESS",
         emailPlaceholder: "e.g. alex@example.com",
-        orgLabel: "Team, School, or Organization (Optional)",
-        orgPlaceholder: "e.g. Metro Elite Athletics",
-        referralLabel: "Referral / VIP Code (Optional)",
-        referralPlaceholder: "e.g. VIP2026",
+        goalLabel: "WHAT'S YOUR PRIMARY GOAL? (E.G. IMPROVE AGILITY, AVOID ACL INJURIES)",
+        goalPlaceholder: "Help us understand what you hope to achieve...",
         discountBadge: "10% Launch Discount will be linked to this email address",
         privacyNotice: "No spam. We'll only send official launch notifications and early access invitations.",
         backBtn: "BACK",
-        submitBtn: "CONFIRM & JOIN WAITLIST"
+        submitBtn: "CLAIM MY EARLY ACCESS SPOT"
       },
       success: {
         badge: "WAITLIST RESERVATION CONFIRMED",
@@ -209,7 +208,7 @@ export const WaitlistPage: React.FC<WaitlistPageProps> = ({
         items: [
           {
             title: "SOYEZ LES PREMIERS",
-            desc: "Bénéficiez de mises à jour prioritaires et d'un accès anticipé à la plateforme web PRO ATHLETE dès sa sortie."
+            desc: "Bénéficiez de mises à jour prioritaires et d'un accès anticipé à l'application PRO ATHLETE dès sa sortie."
           },
           {
             title: "ENTRAÎNEZ-VOUS MIEUX, PARTOUT",
@@ -271,22 +270,20 @@ export const WaitlistPage: React.FC<WaitlistPageProps> = ({
         continueBtn: "CONTINUER"
       },
       step3: {
-        title: "CONFIRMEZ VOTRE INSCRIPTION",
-        subtitle: "Saisissez vos coordonnées pour garantir votre place et verrouiller vos 10% de réduction.",
+        title: "RÉSERVEZ VOTRE PLACE",
+        subtitle: "Saisissez vos coordonnées pour garantir votre invitation prioritaire.",
         selectedRole: "Profil sélectionné :",
         selectedSport: "Sport principal :",
-        fullNameLabel: "Nom complet",
+        fullNameLabel: "NOM COMPLET",
         fullNamePlaceholder: "ex. Jean-François Mercier",
-        emailLabel: "Adresse e-mail",
+        emailLabel: "ADRESSE E-MAIL",
         emailPlaceholder: "ex. jf.mercier@club.ca",
-        orgLabel: "Club, école ou académie (Optionnel)",
-        orgPlaceholder: "ex. Académie Sportive de Montréal",
-        referralLabel: "Code d'invitation (Optionnel)",
-        referralPlaceholder: "ex. VIP2026",
+        goalLabel: "QUEL EST VOTRE OBJECTIF PRINCIPAL ? (EX. AMÉLIORER L'AGILITÉ, PRÉVENIR LES BLESSURES DU LCA)",
+        goalPlaceholder: "Aidez-nous à comprendre ce que vous souhaitez accomplir...",
         discountBadge: "Rabais de 10% au lancement associé automatiquement à cet e-mail",
         privacyNotice: "Aucun spam. Nous n'envoyons que les annonces officielles et invitations d'accès.",
         backBtn: "RETOUR",
-        submitBtn: "CONFIRMER ET REJOINDRE"
+        submitBtn: "RÉSERVER MON ACCÈS ANTICIPÉ"
       },
       success: {
         badge: "RÉSERVATION CONFIRMÉE",
@@ -666,66 +663,93 @@ export const WaitlistPage: React.FC<WaitlistPageProps> = ({
                       </div>
 
                       <form onSubmit={handleSubmit} className="space-y-5">
-                        {/* Name & Email */}
+                        {/* Name & Email with inner icons */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                           <div>
-                            <label className="block text-[11px] font-black uppercase tracking-wider text-white/80 mb-2 flex items-center gap-1.5">
-                              <User size={13} className="text-[#5CE1E6]" />
-                              {t.step3.fullNameLabel} *
+                            <label className="block text-[11px] font-black uppercase tracking-wider text-white/80 mb-2">
+                              {t.step3.fullNameLabel}
                             </label>
-                            <input
-                              type="text"
-                              required
-                              value={formData.fullName}
-                              onChange={e => setFormData({ ...formData, fullName: e.target.value })}
-                              placeholder={t.step3.fullNamePlaceholder}
-                              className="w-full bg-[#001320] border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-[#5CE1E6] transition-colors"
-                            />
+                            <div className="relative">
+                              <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-white/40">
+                                <User size={16} />
+                              </div>
+                              <input
+                                type="text"
+                                required
+                                value={formData.fullName}
+                                onChange={e => setFormData({ ...formData, fullName: e.target.value })}
+                                placeholder={t.step3.fullNamePlaceholder}
+                                className="w-full bg-[#001320] border border-white/15 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-[#5CE1E6] transition-colors"
+                              />
+                            </div>
                           </div>
 
                           <div>
-                            <label className="block text-[11px] font-black uppercase tracking-wider text-white/80 mb-2 flex items-center gap-1.5">
-                              <Mail size={13} className="text-[#5CE1E6]" />
-                              {t.step3.emailLabel} *
+                            <label className="block text-[11px] font-black uppercase tracking-wider text-white/80 mb-2">
+                              {t.step3.emailLabel}
                             </label>
-                            <input
-                              type="email"
-                              required
-                              value={formData.email}
-                              onChange={e => setFormData({ ...formData, email: e.target.value })}
-                              placeholder={t.step3.emailPlaceholder}
-                              className="w-full bg-[#001320] border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-[#5CE1E6] transition-colors"
-                            />
+                            <div className="relative">
+                              <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-white/40">
+                                <Mail size={16} />
+                              </div>
+                              <input
+                                type="email"
+                                required
+                                value={formData.email}
+                                onChange={e => setFormData({ ...formData, email: e.target.value })}
+                                placeholder={t.step3.emailPlaceholder}
+                                className="w-full bg-[#001320] border border-white/15 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-[#5CE1E6] transition-colors"
+                              />
+                            </div>
                           </div>
                         </div>
 
+                        {/* Goal / Message Section with Character Counter */}
+                        <div>
+                          <div className="flex items-center justify-between mb-2 gap-2">
+                            <label className="block text-[11px] font-black uppercase tracking-wider text-white/80">
+                              {t.step3.goalLabel}
+                            </label>
+                            <span className="text-[11px] font-mono text-white/40 shrink-0">
+                              {formData.message.length} / 240
+                            </span>
+                          </div>
+                          <textarea
+                            maxLength={240}
+                            rows={3}
+                            value={formData.message}
+                            onChange={e => setFormData({ ...formData, message: e.target.value })}
+                            placeholder={t.step3.goalPlaceholder}
+                            className="w-full bg-[#001320] border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-[#5CE1E6] transition-colors resize-none leading-relaxed"
+                          />
+                        </div>
+
                         {/* Launch Discount Guarantee Notice */}
-                        <div className="flex items-center gap-3 p-4 rounded-xl bg-[#005776]/25 border border-[#5CE1E6]/30 text-xs text-[#5CE1E6]">
-                          <Percent size={18} className="shrink-0" />
+                        <div className="flex items-center gap-3 p-3.5 rounded-xl bg-[#005776]/25 border border-[#5CE1E6]/30 text-xs text-[#5CE1E6]">
+                          <Percent size={16} className="shrink-0" />
                           <span className="font-semibold">{t.step3.discountBadge}</span>
                         </div>
 
                         {/* Divider & Actions */}
-                        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+                        <div className="border-t border-white/10 pt-5 flex flex-col sm:flex-row justify-between items-center gap-4">
                           <button
                             type="button"
                             onClick={() => setCurrentStep(2)}
-                            className="text-white/60 hover:text-white text-xs font-black uppercase tracking-wider flex items-center gap-2 transition-colors px-3 py-2"
+                            className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-heading font-black text-xs uppercase tracking-wider hover:bg-white/10 hover:border-white/20 transition-all text-center"
                           >
-                            <ArrowLeft size={16} />
-                            <span>{t.step3.backBtn}</span>
+                            {t.step3.backBtn}
                           </button>
 
                           <button
                             type="submit"
-                            className="w-full sm:w-auto bg-[#5CE1E6] hover:bg-white text-[#002337] font-heading font-black italic uppercase tracking-wider text-base px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-[#5CE1E6]/20 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
+                            className="w-full sm:w-auto bg-[#5CE1E6] hover:bg-white text-[#002337] font-heading font-black italic uppercase tracking-wider text-xs sm:text-sm px-7 py-3.5 rounded-xl transition-all shadow-lg shadow-[#5CE1E6]/20 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
                           >
                             <span>{t.step3.submitBtn}</span>
-                            <ArrowRight size={18} />
+                            <ArrowRight size={16} />
                           </button>
                         </div>
 
-                        <p className="text-[11px] text-white/40 text-center pt-2">
+                        <p className="text-[11px] text-white/40 text-center pt-1">
                           {t.step3.privacyNotice}
                         </p>
                       </form>
@@ -839,7 +863,8 @@ export const WaitlistPage: React.FC<WaitlistPageProps> = ({
                           profile: 'INDIVIDUAL ATHLETE',
                           sport: 'BASKETBALL',
                           fullName: '',
-                          email: ''
+                          email: '',
+                          message: ''
                         });
                       }}
                       className="py-3.5 px-6 rounded-xl bg-transparent border border-white/20 text-white/80 font-bold text-xs uppercase tracking-wider hover:border-white hover:text-white transition-colors"

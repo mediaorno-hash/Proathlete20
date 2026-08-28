@@ -167,9 +167,30 @@ const App: React.FC = () => {
             {['Mission', 'Founder', 'Features', 'Pricing', 'Waitlist', 'Community'].map(item => {
               const isPricing = item === 'Pricing';
               const isWaitlist = item === 'Waitlist';
+              const isFeatures = item === 'Features';
               const isPricingActive = isPricing && currentPage === 'pricing';
               const isWaitlistActive = isWaitlist && currentPage === 'waitlist';
               const label = (t.nav as any)[item.toLowerCase()] || item;
+
+              if (isFeatures) {
+                return (
+                  <button
+                    key={item}
+                    onClick={() => {
+                      setCurrentPage('pricing');
+                      setTimeout(() => {
+                        const element = document.getElementById('compare-features');
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                      }, 100);
+                    }}
+                    className="hover:text-[#5CE1E6] text-white/80 transition-colors"
+                  >
+                    {label}
+                  </button>
+                );
+              }
 
               if (isPricing) {
                 return (
@@ -691,10 +712,13 @@ const App: React.FC = () => {
               <li>
                 <button 
                   onClick={() => {
-                    setCurrentPage('home');
+                    setCurrentPage('pricing');
                     setTimeout(() => {
-                      document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
-                    }, 50);
+                      const element = document.getElementById('compare-features');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }
+                    }, 100);
                   }} 
                   className="hover:text-white transition-colors text-left"
                 >

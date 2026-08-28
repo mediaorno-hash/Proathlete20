@@ -141,7 +141,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({
           { name: "Neuromuscular Warmups", values: ["Essential", "Personalized", "Team-wide", "Organization-wide"] },
           { name: "Injury Prevention Programs", values: ["Essential", "Personalized", "Team-wide", "Organization-wide"] },
           { name: "Joint Health & Mobility", values: ["Check", "Check", "Check", "Check"] },
-          { name: "Sport-specific Training", values: ["-", "Check", "-", "Check"] },
+          { name: "Sport-specific Training", values: ["-", "Check", "Check", "Check"] },
           { name: "Performance Tracking & Insights", values: ["-", "Check", "-", "Full Analytics"] },
           { name: "Team Management", values: ["-", "-", "-", "Multi-team & oversight"] }
         ]
@@ -272,7 +272,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({
           { name: "Échauffements neuromusculaires", values: ["De base", "Personnalisé", "Équipe complète", "À l'échelle du club"] },
           { name: "Prévention des blessures", values: ["Essentiel", "Personnalisé", "Équipe complète", "À l'échelle du club"] },
           { name: "Mobilité & santé articulaire", values: ["Check", "Check", "Check", "Check"] },
-          { name: "Entraînement spécifique au sport", values: ["-", "Check", "-", "Check"] },
+          { name: "Entraînement spécifique au sport", values: ["-", "Check", "Check", "Check"] },
           { name: "Suivi & rapports de performance", values: ["-", "Check", "-", "Analyses complètes"] },
           { name: "Gestion d'équipe", values: ["-", "-", "-", "Multi-équipes & supervision"] }
         ]
@@ -491,7 +491,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({
         </div>
 
         {/* Compare Features in Detail section */}
-        <div className="mb-24 md:mb-32 overflow-x-auto">
+        <div id="compare-features" className="mb-24 md:mb-32 overflow-x-auto scroll-mt-28">
           <div className="text-center mb-10">
             <h3 className="text-2xl md:text-3xl font-heading font-black italic tracking-tight uppercase text-white mb-2">
               {curr.compare.title}
