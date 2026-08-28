@@ -1,0 +1,10 @@
+{
+  "name": "Remix: ProAthlete2",
+  "description": "Train Smart. Play Forever. The leading injury prevention and performance platform.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
