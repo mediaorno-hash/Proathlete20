@@ -46,7 +46,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({
       toggle: {
         monthly: "Monthly Billing",
         yearly: "Annual Billing",
-        save: "Save 20%"
+        save: "Save over 35%"
       },
       pricingNotes: "Price in CAD",
       tiers: [
@@ -75,9 +75,9 @@ export const PricingPage: React.FC<PricingPageProps> = ({
           name: "INDIVIDUAL ATHLETE",
           tagline: "Train smarter. Perform longer. Personalized programs designed to help you improve performance, build strength, and reduce injury risk.",
           perfectFor: `Perfect for: ${activeSport === 'ALL' ? 'Basketball or soccer' : sportLabel} Athletes committed to maximizing their potential and staying available for their sport.`,
-          price: isYearly ? "$129.99" : "$14.99",
+          price: isYearly ? "$149.99" : "$19.99",
           priceSub: isYearly ? "/year" : "/month",
-          priceUnder: isYearly ? "Save over 25% compared to monthly billing." : "Billed Monthly",
+          priceUnder: isYearly ? "Save over 35% compared to monthly billing." : "Billed Monthly",
           features: [
             "Personalized sport-specific training programs",
             "Strength and power development programs",
@@ -177,7 +177,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({
       toggle: {
         monthly: "Facturation Mensuelle",
         yearly: "Facturation Annuelle",
-        save: "Économisez 20%"
+        save: "Économisez plus de 35%"
       },
       pricingNotes: "Prix en CAD",
       tiers: [
@@ -206,9 +206,9 @@ export const PricingPage: React.FC<PricingPageProps> = ({
           name: "ATHLÈTE INDIVIDUEL",
           tagline: "Entraînez-vous intelligemment. Performez plus longtemps. Des programmes personnalisés conçus pour améliorer vos performances, développer votre force et réduire votre risque de blessure.",
           perfectFor: `Idéal pour : Les athlètes de ${activeSport === 'ALL' ? 'basketball ou soccer' : activeSport === 'SOCCER' ? 'soccer' : 'basketball'} qui souhaitent atteindre leur plein potentiel tout en demeurant en santé.`,
-          price: isYearly ? "129,99 $" : "14,99 $",
+          price: isYearly ? "149,99 $" : "19,99 $",
           priceSub: isYearly ? "/année" : "/mois",
-          priceUnder: isYearly ? "Économisez plus de 25 % par rapport à la facturation mensuelle." : "Facturé mensuellement",
+          priceUnder: isYearly ? "Économisez plus de 35 % par rapport à la facturation mensuelle." : "Facturé mensuellement",
           features: [
             "Programmes d'entraînement personnalisés selon votre sport",
             "Programmes de développement de la force et de la puissance",
