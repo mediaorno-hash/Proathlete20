@@ -232,22 +232,22 @@ export const WaitlistPage: React.FC<WaitlistPageProps> = ({
         profiles: [
           {
             id: 'INDIVIDUAL ATHLETE' as ProfileType,
-            label: "INDIVIDUAL ATHLETE",
+            label: "Athlète",
             sublabel: "Développement individuel, mobilité et protocoles"
           },
           {
             id: 'COACH / TRAINER' as ProfileType,
-            label: "COACH / TRAINER",
+            label: "Entraîneur",
             sublabel: "Supervision d'effectif, plans d'équipe et prévention"
           },
           {
             id: 'PARENT' as ProfileType,
-            label: "PARENT",
+            label: "Parent",
             sublabel: "Suivi athlétique des jeunes et sécurité sportive"
           },
           {
             id: 'ATHLETIC DIRECTOR' as ProfileType,
-            label: "ATHLETIC DIRECTOR",
+            label: "Directeur/trice ou responsable des sports",
             sublabel: "Administration globale pour clubs et académies"
           }
         ],
@@ -534,7 +534,7 @@ export const WaitlistPage: React.FC<WaitlistPageProps> = ({
                                 <span className="block text-[10px] font-bold tracking-[0.2em] text-white/40 uppercase mb-1">
                                   {t.step1.cardEyebrow}
                                 </span>
-                                <h3 className="font-heading text-xl sm:text-2xl font-black italic uppercase tracking-wider text-white">
+                                <h3 className={`font-heading font-black italic uppercase tracking-wider text-white ${p.label.length > 20 ? 'text-base sm:text-lg leading-snug' : 'text-xl sm:text-2xl'}`}>
                                   {p.label}
                                 </h3>
                               </div>
@@ -643,7 +643,7 @@ export const WaitlistPage: React.FC<WaitlistPageProps> = ({
                         <div className="flex items-center gap-2">
                           <span className="text-white/50">{t.step3.selectedRole}</span>
                           <span className="font-black text-[#5CE1E6] bg-[#005776]/40 px-2.5 py-1 rounded-lg border border-[#5CE1E6]/30 uppercase">
-                            {formData.profile}
+                            {t.step1.profiles.find(p => p.id === formData.profile)?.label || formData.profile}
                           </span>
                         </div>
                         <span className="text-white/20">•</span>
@@ -784,7 +784,9 @@ export const WaitlistPage: React.FC<WaitlistPageProps> = ({
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
                       <div className="bg-[#001a29] p-3.5 rounded-xl border border-white/5">
                         <span className="block text-white/40 mb-1">{t.success.profile}</span>
-                        <span className="font-heading font-black italic text-white text-sm uppercase">{formData.profile}</span>
+                        <span className="font-heading font-black italic text-white text-sm uppercase">
+                          {t.step1.profiles.find(p => p.id === formData.profile)?.label || formData.profile}
+                        </span>
                       </div>
                       <div className="bg-[#001a29] p-3.5 rounded-xl border border-white/5">
                         <span className="block text-white/40 mb-1">{t.success.sport}</span>

@@ -265,9 +265,9 @@ export const PricingPage: React.FC<PricingPageProps> = ({
         }
       ],
       compare: {
-        title: "COMPAREZ LES FONCTIONS EN DÉTAIL",
+        title: "COMPAREZ LES FONCTIONNALITÉS EN DÉTAIL",
         subtitle: "CHOISISSEZ LE PLAN ADAPTÉ À VOS OBJECTIFS SPORTIFS",
-        headers: ["Fonctions incluses", "Gratuit", "Athlète Individuel", "Entraîneur Individuel", "Organisation Sportive"],
+        headers: ["Fonctionnalités incluses", "Gratuit", "Athlète Individuel", "Entraîneur Individuel", "Organisation Sportive"],
         rows: [
           { name: "Échauffements neuromusculaires", values: ["De base", "Personnalisé", "Équipe complète", "À l'échelle du club"] },
           { name: "Prévention des blessures", values: ["Essentiel", "Personnalisé", "Équipe complète", "À l'échelle du club"] },

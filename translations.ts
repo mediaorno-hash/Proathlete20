@@ -240,7 +240,7 @@ export const translations = {
     nav: {
       mission: "Mission",
       founder: "Fondatrice",
-      features: "Fonctions",
+      features: "Fonctionnalités",
       pricing: "Tarifs",
       waitlist: "Liste d'attente",
       community: "Communauté",

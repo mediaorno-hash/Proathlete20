@@ -127,11 +127,6 @@ const App: React.FC = () => {
     }
   };
 
-  // Get the appropriate mockup image based on language
-  const mockupImage = lang === 'en' 
-    ? "https://assets.bigvu.tv/image/69653d6796b4ad575649a17f/asset.png"
-    : "https://assets.bigvu.tv/image/69653d76b4517a3552d08b1b/asset.png";
-
   const currentRoleData = (t.roles as any)[activeRole];
   const roleDescription = currentRoleData.desc;
 
@@ -419,13 +414,19 @@ const App: React.FC = () => {
               className="lg:col-span-5 flex items-center justify-center lg:justify-end mt-8 lg:mt-0"
             >
               <div className="relative w-full max-w-[290px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[420px] flex items-center justify-center">
-                <img
-                  key={lang}
-                  src={mockupImage}
-                  alt={lang === 'fr' ? "Application Mobile Pro Athlete" : "Pro Athlete Mobile App"}
-                  className="w-full h-auto object-contain drop-shadow-[0_25px_50px_rgba(0,0,0,0.7)] select-none pointer-events-none"
-                  loading="eager"
-                />
+                <div className="w-full relative overflow-hidden rounded-[38px] sm:rounded-[44px] md:rounded-[48px] lg:rounded-[52px]">
+                  <video
+                    className="w-full h-auto object-contain select-none pointer-events-none"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                  >
+                    <source src="/phone-preview.mp4" type="video/mp4" />
+                    <source src="https://assets.bigvu.tv/video/6a959f1e9404970da2a8ed3d/4ea1c1c0-c5c5-4e40-9e87-fe0246598f8b/temp_bgNaQsIo_480.mp4" type="video/mp4" />
+                  </video>
+                </div>
               </div>
             </motion.div>
           </div>
