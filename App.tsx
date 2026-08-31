@@ -413,8 +413,8 @@ const App: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.15 }}
               className="lg:col-span-5 flex items-center justify-center lg:justify-end mt-8 lg:mt-0"
             >
-              <div className="relative w-full max-w-[290px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[420px] flex items-center justify-center">
-                <div className="w-full relative overflow-hidden rounded-[38px] sm:rounded-[44px] md:rounded-[48px] lg:rounded-[52px]">
+              <div className="relative w-full max-w-[275px] sm:max-w-[323px] md:max-w-[361px] lg:max-w-[399px] flex items-center justify-center">
+                <div className="w-full relative overflow-hidden rounded-[36px] sm:rounded-[42px] md:rounded-[46px] lg:rounded-[50px]">
                   <video
                     className="w-full h-auto object-contain select-none pointer-events-none"
                     autoPlay
