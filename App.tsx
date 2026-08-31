@@ -340,45 +340,47 @@ const App: React.FC = () => {
 
         {/* Content Overlay */}
         <div className="relative z-10 max-w-7xl mx-auto w-full pt-12 sm:pt-16 lg:pt-0">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-stretch">
             {/* Left Column: Heading, Description & Download CTAs */}
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="lg:col-span-7 flex flex-col items-start text-left"
+              className="lg:col-span-7 flex flex-col justify-between items-start text-left"
             >
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.75rem] font-heading font-black italic leading-[0.88] uppercase tracking-tight text-white mb-4">
-                {lang === 'fr' ? (
-                  <>
-                    PERFORME.<br/>
-                    PRÉVIENS.<br/>
-                    JOUE PLUS<br/>
-                    LONGTEMPS.
-                  </>
-                ) : (
-                  <>
-                    PERFORM.<br/>
-                    PREVENT.<br/>
-                    PLAY<br/>
-                    LONGER.
-                  </>
-                )}
-              </h1>
+              <div>
+                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] xl:text-[6.5rem] font-heading font-black italic leading-[0.88] uppercase tracking-tight text-white mb-4">
+                  {lang === 'fr' ? (
+                    <>
+                      PERFORME.<br/>
+                      PRÉVIENS.<br/>
+                      JOUE PLUS<br/>
+                      LONGTEMPS.
+                    </>
+                  ) : (
+                    <>
+                      PERFORM.<br/>
+                      PREVENT.<br/>
+                      PLAY<br/>
+                      LONGER.
+                    </>
+                  )}
+                </h1>
 
-              {/* Bold Red Accent Bar matching screenshot */}
-              <div 
-                className={`h-2 sm:h-2.5 bg-[#DC2626] mb-6 sm:mb-8 ${
-                  lang === 'fr' ? 'w-56 sm:w-72 md:w-88' : 'w-48 sm:w-60 md:w-72'
-                }`} 
-              />
+                {/* Bold Red Accent Bar matching screenshot */}
+                <div 
+                  className={`h-2 sm:h-2.5 bg-[#DC2626] mb-6 sm:mb-8 ${
+                    lang === 'fr' ? 'w-56 sm:w-72 md:w-88' : 'w-48 sm:w-60 md:w-72'
+                  }`} 
+                />
 
-              <p className="text-base sm:text-lg md:text-xl text-white/90 font-light leading-relaxed max-w-xl mb-8 sm:mb-10">
-                {t.hero.desc}
-              </p>
+                <p className="text-base sm:text-lg md:text-xl text-white/90 font-light leading-relaxed max-w-xl mb-8">
+                  {t.hero.desc}
+                </p>
+              </div>
 
               {/* App Store & Google Play CTA Buttons */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mt-auto">
                 <a 
                   href={APPLE_STORE_URL} 
                   target="_blank" 
@@ -411,12 +413,12 @@ const App: React.FC = () => {
               initial={{ opacity: 0, scale: 0.94, y: 30 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.15 }}
-              className="lg:col-span-5 flex items-center justify-center lg:justify-end mt-8 lg:mt-0"
+              className="lg:col-span-5 flex flex-col items-center justify-center lg:items-end lg:justify-stretch mt-8 lg:mt-0 h-full"
             >
-              <div className="relative w-full max-w-[275px] sm:max-w-[323px] md:max-w-[361px] lg:max-w-[399px] flex items-center justify-center">
-                <div className="w-full relative overflow-hidden rounded-[36px] sm:rounded-[42px] md:rounded-[46px] lg:rounded-[50px]">
+              <div className="relative w-full max-w-[275px] sm:max-w-[323px] md:max-w-[361px] lg:max-w-none lg:w-auto lg:h-full flex items-center lg:items-stretch justify-center lg:justify-end">
+                <div className="relative overflow-hidden rounded-[36px] sm:rounded-[42px] md:rounded-[46px] lg:rounded-[48px] h-auto lg:h-full aspect-[352/762] max-h-[520px] sm:max-h-[580px] lg:max-h-full flex items-center justify-center">
                   <video
-                    className="w-full h-auto object-contain select-none pointer-events-none"
+                    className="w-full h-full object-contain select-none pointer-events-none"
                     autoPlay
                     muted
                     loop
