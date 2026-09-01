@@ -103,7 +103,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({
             "Injury prevention programming",
             "Mobility and recovery resources",
             "Bodyweight training programs",
-            `${activeSport === 'SOCCER' ? 'Soccer' : 'Basketball'}-specific prehab programs`,
+            "Sport-specific prehab programs",
             "Ready-to-implement programming for your team"
           ],
           extraNote: "Weight-room strength programs not included.",
@@ -234,7 +234,7 @@ export const PricingPage: React.FC<PricingPageProps> = ({
             "Programmes de prévention des blessures",
             "Ressources de mobilité et de récupération",
             "Programmes d'entraînement au poids du corps",
-            `Programmes de prévention (prehab) spécifiques au ${activeSport === 'SOCCER' ? 'soccer' : 'basketball'}`,
+            "Programmes de prévention (prehab) spécifiques au sport",
             "Outils et programmes prêts à implanter auprès de votre équipe"
           ],
           extraNote: "Les programmes de musculation avec charges ne sont pas inclus.",

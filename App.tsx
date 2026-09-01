@@ -12,7 +12,7 @@ import {
   Menu, X, Star, Globe, Mail, Send,
   Accessibility, Footprints, Smile, Dumbbell, History,
   ArrowLeft, School, User, Heart, Zap, Timer, Star as StarIcon, Quote,
-  ShoppingCart, Facebook, Instagram, MessageSquare, Trophy, Sparkles
+  Facebook, Instagram, MessageSquare, Trophy, Sparkles
 } from 'lucide-react';
 import { UserRole, Sport } from './types';
 import { translations } from './translations';
@@ -271,13 +271,10 @@ const App: React.FC = () => {
           </button>
 
           <div className="hidden md:flex items-center gap-4 border-r border-white/20 pr-6">
-            <a href="https://proathlete.ca/en/subscription?action=cart" className="text-white hover:text-[#005776] transition-colors">
-              <ShoppingCart size={20} />
-            </a>
-            <a href="https://www.facebook.com/proathletebasketball/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#005776] transition-colors">
+            <a href="https://www.facebook.com/proathletebasketball/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#005776] transition-colors" title="Facebook" aria-label="Facebook">
               <Facebook size={20} />
             </a>
-            <a href="https://www.instagram.com/proathletebasketball/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#005776] transition-colors">
+            <a href="https://www.instagram.com/proathlete.app/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#005776] transition-colors" title="Instagram" aria-label="Instagram">
               <Instagram size={20} />
             </a>
           </div>
