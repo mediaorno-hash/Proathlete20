@@ -31,7 +31,7 @@ export const translations = {
     },
     nav: {
       mission: "Mission",
-      founder: "Founder",
+      founder: "Founders",
       features: "Features",
       pricing: "Pricing",
       waitlist: "Waitlist",
@@ -87,12 +87,18 @@ export const translations = {
       }
     },
     founder: {
-      tag: "MEET THE FOUNDER",
+      tag: "MEET THE FOUNDERS",
       quote: "PERFORMANCE STARTS WITH HEALTH - DRIVEN BY THE RIGHT EXERCISES.",
-      bio1: "Playing at the university level and captaining the national team were some of the proudest moments of my life. But sports gave me more than just trophies and memories. It also gave me scars.",
-      bio2: "Two fractures and a surgery later, I learned something painful: the way we train athletes is broken. We push harder, run faster, lift heavier, but nobody teaches us how to protect our bodies.",
-      bio3: "That realization haunted me. So I built PRO ATHLETE. Not just as an app, but as the solution I wish I'd had. One that brings prevention and performance together, grounded in science and battle-tested on the field.",
-      bio4: "",
+      founder1: {
+        name: "Elyse Jobin",
+        role: "Founder & CEO",
+        bio: "A former high-level basketball athlete and physiotherapist, Elyse has spent more than a decade working with athletes at every level. Her experience as both an athlete and clinician shaped the vision behind PRO ATHLETE: making evidence-based injury prevention and performance training more accessible to athletes and the people who support them."
+      },
+      founder2: {
+        name: "Léa Couture Fernandez",
+        role: "Co-Founder",
+        bio: "A former competitive swimmer and rower, Léa is a sports physiotherapist with experience working with professional and national-level athletes, including in hockey and football. She brings strong expertise in injury prevention, with a particular interest in youth and female athletes. As co-founder of PRO ATHLETE, she contributes to the development of the platform and its training programs, helping ensure they remain practical, evidence-based, and adapted to the realities of sport."
+      },
       stat1: "INJURY REDUCTION ACCORDING TO RESEARCH",
       stat2: "COACHES AND ATHLETES HELPED"
     },
@@ -239,7 +245,7 @@ export const translations = {
     },
     nav: {
       mission: "Mission",
-      founder: "Fondatrice",
+      founder: "Fondatrices",
       features: "Fonctionnalités",
       pricing: "Tarifs",
       waitlist: "Liste d'attente",
@@ -295,12 +301,18 @@ export const translations = {
       }
     },
     founder: {
-      tag: "LA FONDATRICE",
+      tag: "LES FONDATRICES",
       quote: "LA PERFORMANCE COMMENCE PAR LA SANTÉ - GRÂCE AUX BONS EXERCICES.",
-      bio1: "Ayant joué dans des équipes nationales et au niveau universitaire, j’ai connu les sommets : le brassard de capitaine, la compétition de haut niveau, la pression de performer.",
-      bio2: "Mais j’ai aussi découvert l’envers du décor. Les blessures. Deux fractures. Une chirurgie. Des arrêts forcés qui changent un athlète à jamais.",
-      bio3: "C’est là que j’ai compris une vérité dérangeante : l’entraînement traditionnel prépare à performer, mais trop souvent, il échoue à protéger.",
-      bio4: "PRO ATHLETE est né de cette prise de conscience. Pour réunir enfin prévention et performance, avec une approche éprouvée scientifiquement, directement sur le terrain.",
+      founder1: {
+        name: "Elyse Jobin",
+        role: "Fondatrice & PDG",
+        bio: "Ancienne athlète de basketball de haut niveau et physiothérapeute, Elyse cumule plus d'une décennie d'expérience auprès d'athlètes de tous les niveaux. Son parcours d'athlète et de clinicienne a façonné la vision derrière PRO ATHLETE : rendre la prévention des blessures fondée sur les données probantes et l'entraînement de performance plus accessibles aux athlètes ainsi qu'aux personnes qui les soutiennent."
+      },
+      founder2: {
+        name: "Léa Couture Fernandez",
+        role: "Co-fondatrice",
+        bio: "Ancienne nageuse et rameuse de compétition, Léa est une physiothérapeute du sport cumulant de l'expérience auprès d'athlètes professionnels et de niveau national, notamment au hockey et au football. Elle apporte une solide expertise en prévention des blessures, avec un intérêt particulier pour les jeunes athlètes et les athlètes féminines. En tant que co-fondatrice de PRO ATHLETE, elle contribue au développement de la plateforme et de ses programmes d'entraînement, veillant à ce qu'ils demeurent pratiques, fondés sur des données probantes et adaptés aux réalités du sport."
+      },
       stat1: "RÉDUCTION DES BLESSURES SELON LA RECHERCHE",
       stat2: "ENTRAÎNEURS ET ATHLÈTES AIDÉS"
     },

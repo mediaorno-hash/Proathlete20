@@ -515,7 +515,7 @@ const App: React.FC = () => {
       {/* Founder Section */}
       <section id="founder" className="py-12 md:py-20 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#002337] to-[#001f30]">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
             {/* Left Column: Story & Stats */}
             <div className="lg:col-span-7 flex flex-col items-start text-left">
               <div className="inline-flex items-center gap-2 bg-[#005776]/20 border border-[#5CE1E6]/30 px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase text-[#5CE1E6] mb-6">
@@ -534,11 +534,24 @@ const App: React.FC = () => {
                 )}
               </h2>
 
-              <div className="space-y-4 sm:space-y-5 text-sm sm:text-base text-white/80 font-light leading-relaxed max-w-xl">
-                <p>{t.founder.bio1}</p>
-                <p>{t.founder.bio2}</p>
-                <p>{t.founder.bio3}</p>
-                {t.founder.bio4 && <p>{t.founder.bio4}</p>}
+              <div className="space-y-6 text-sm sm:text-base text-white/85 font-light leading-relaxed max-w-xl">
+                <div className="space-y-2">
+                  <h3 className="text-base sm:text-lg font-heading font-black italic uppercase tracking-wider text-white">
+                    <span className="text-[#5CE1E6]">{t.founder.founder1.name}</span> — {t.founder.founder1.role}
+                  </h3>
+                  <p className="text-white/80 leading-relaxed font-light text-sm sm:text-base">
+                    {t.founder.founder1.bio}
+                  </p>
+                </div>
+
+                <div className="space-y-2 pt-2">
+                  <h3 className="text-base sm:text-lg font-heading font-black italic uppercase tracking-wider text-white">
+                    <span className="text-[#5CE1E6]">{t.founder.founder2.name}</span> — {t.founder.founder2.role}
+                  </h3>
+                  <p className="text-white/80 leading-relaxed font-light text-sm sm:text-base">
+                    {t.founder.founder2.bio}
+                  </p>
+                </div>
               </div>
 
               <div className="flex justify-start gap-10 sm:gap-14 mt-8 sm:mt-10 pt-8 border-t border-white/10 w-full max-w-xl">
@@ -553,8 +566,8 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            {/* Right Column: Video Embed (Matches Screenshot) */}
-            <div className="lg:col-span-5 w-full flex items-center justify-center">
+            {/* Right Column: Video Embed & Photo Underneath */}
+            <div className="lg:col-span-5 w-full flex flex-col gap-5 sm:gap-6 items-center justify-center">
               <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border border-white/15 bg-[#001726]">
                 <iframe
                   key={lang}
@@ -563,10 +576,21 @@ const App: React.FC = () => {
                       ? "https://desk.bigvu.tv/embed/6a46c5dece88297190dfe38a/6a46c5dece88297190dfe392"
                       : "https://desk.bigvu.tv/embed/6a46c7f0ce88297190e01216/6a46c7f1ce88297190e01225"
                   }
-                  title={lang === 'fr' ? "PRO ATHLETE - Rencontrez la fondatrice" : "PRO ATHLETE - Meet the Founder"}
+                  title={lang === 'fr' ? "PRO ATHLETE - Rencontrez les fondatrices" : "PRO ATHLETE - Meet the Founders"}
                   className="w-full h-full border-0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                />
+              </div>
+
+              {/* Photo Under Video */}
+              <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl border border-white/15 bg-[#001726]">
+                <img
+                  src="https://assets.bigvu.tv/image/6aa8269fbe3f4bc30a49a1ed/asset.jpeg"
+                  alt="Elyse Jobin & Léa Couture Fernandez"
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
                 />
               </div>
             </div>
