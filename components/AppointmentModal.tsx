@@ -23,16 +23,30 @@ const AppointmentModal: React.FC<AppointmentModalProps> = ({ isOpen, onClose, la
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch('/api/send-lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          role: formState.role === t.form.roleOptions.other ? formState.customRole : formState.role,
+          org: formState.org,
+          message: formState.message,
+        }),
+      });
+      if (!response.ok) throw new Error('Failed to send');
       setIsSuccess(true);
-    }, 1500);
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Something went wrong. Please try again or email info@proathlete.ca directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
-
   const resetForm = () => {
     setFormState({ name: '', email: '', role: '', customRole: '', org: '', message: '' });
     setIsSuccess(false);
