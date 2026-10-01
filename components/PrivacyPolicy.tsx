@@ -60,7 +60,7 @@ In many cases, your web browser or mobile device platform will provide additiona
             'To conduct general research and research on the effectiveness of our programs in preventing injuries and improving performance;',
             'To communicate with you about updates, promotions, and relevant information about PRO ATHLETE;',
             'To operate, improve and maintain our business, products and services;',
-            'To protect our or others\' rights, property or safety;',
+            "To protect our or others' rights, property or safety;",
             'Other purposes: We may also use your personal data in other ways and will provide specific notice at the time of collection and obtain your consent where necessary.',
           ],
         },
@@ -72,7 +72,7 @@ In many cases, your web browser or mobile device platform will provide additiona
             'Service Providers: We may share your information with third-party service providers to facilitate our services, such as data storage and analysis and payment solutions. These providers are bound by strict confidentiality agreements.',
             'Legal Obligations: We may disclose your information if required by law, or to protect our rights, privacy, safety, or property, and/or that of you or others.',
           ],
-          body: `PRO ATHLETE shares your personal data with PRO ATHLETE subsidiaries and other affiliated entities for the purposes and under the conditions outlined above, with third party service providers processing personal data on PRO ATHLETE's behalf and other third parties to the extent necessary to: (i) comply with a government request, a court order or applicable law; (ii) prevent illegal uses of our Sites and Apps or violations of our policies; (iii) defend ourselves against third party claims; and (iv) assist in fraud prevention or investigation.`,
+          body: "PRO ATHLETE shares your personal data with PRO ATHLETE subsidiaries and other affiliated entities for the purposes and under the conditions outlined above, with third party service providers processing personal data on PRO ATHLETE's behalf and other third parties to the extent necessary to: (i) comply with a government request, a court order or applicable law; (ii) prevent illegal uses of our Sites and Apps or violations of our policies; (iii) defend ourselves against third party claims; and (iv) assist in fraud prevention or investigation.",
         },
         {
           heading: "Children's Privacy",
@@ -109,25 +109,25 @@ Our Sites and Apps may provide links to other (third-party) websites and apps fo
           body: `If you have any questions about this Privacy Policy, please contact us:
 
 Email: support@proathlete.com
-Address: 1202 Belanger, Montréal, Québec, Canada, H2S 1H8`,
+Address: 1202 Belanger, Montreal, Quebec, Canada, H2S 1H8`,
         },
       ],
     },
     fr: {
-      title: 'Politique de Confidentialité',
-      effective: "Cette Politique de Confidentialité est en vigueur depuis le 4 juillet 2024.",
+      title: 'Politique de Confidentialite',
+      effective: "Cette Politique de Confidentialite est en vigueur depuis le 4 juillet 2024.",
       sections: [
         {
-          heading: 'Veuillez lire attentivement cette Politique de Confidentialité',
-          body: `Nous nous engageons à protéger votre vie privée en tant qu'utilisateur (désigné comme "Utilisateur" ou "vous") et nous prenons très au sérieux notre responsabilité concernant la sécurité de vos Données Personnelles. Nous serons clairs et transparents sur les Données Personnelles que nous collectons et ce que nous en ferons.
+          heading: 'Veuillez lire attentivement cette Politique de Confidentialite',
+          body: `Nous nous engageons a proteger votre vie privee en tant qu'utilisateur (designe comme "Utilisateur" ou "vous") et nous prenons tres au serieux notre responsabilite concernant la securite de vos Donnees Personnelles.
 
-EN UTILISANT LES SERVICES, VOUS OU VOTRE PARENT/TUTEUR LÉGAL SI VOUS AVEZ MOINS DE 16 ANS, CONSENTEZ À LA COLLECTE, L'UTILISATION ET LE TRANSFERT DE VOS DONNÉES PERSONNELLES COMME DÉCRIT DANS CETTE POLITIQUE DE CONFIDENTIALITÉ. SI VOUS N'ACCEPTEZ PAS UNE PARTIE DE CETTE POLITIQUE DE CONFIDENTIALITÉ, VEUILLEZ NE PAS UTILISER LES SERVICES.
+EN UTILISANT LES SERVICES, VOUS OU VOTRE PARENT/TUTEUR LEGAL SI VOUS AVEZ MOINS DE 16 ANS, CONSENTEZ A LA COLLECTE, L'UTILISATION ET LE TRANSFERT DE VOS DONNEES PERSONNELLES COMME DECRIT DANS CETTE POLITIQUE DE CONFIDENTIALITE. SI VOUS N'ACCEPTEZ PAS UNE PARTIE DE CETTE POLITIQUE DE CONFIDENTIALITE, VEUILLEZ NE PAS UTILISER LES SERVICES.
 
-VEUILLEZ NOTER QUE PRO ATHLETE ET TOUS LES SERVICES ET SYSTÈMES ASSOCIÉS SONT HÉBERGÉS SUR DES SERVEURS AU QUÉBEC, CANADA. SI VOUS ÊTES SITUÉ EN DEHORS DU QUÉBEC, CANADA, LES INFORMATIONS QUE NOUS COLLECTONS (Y COMPRIS LES COOKIES) SONT TRAITÉES ET STOCKÉES AU QUÉBEC, CANADA. EN UTILISANT LES SERVICES ET EN NOUS FOURNISSANT DES INFORMATIONS, VOUS CONSENTEZ AU TRANSFERT ET AU TRAITEMENT DES INFORMATIONS AU QUÉBEC, CANADA.`,
+VEUILLEZ NOTER QUE PRO ATHLETE ET TOUS LES SERVICES ET SYSTEMES ASSOCIES SONT HEBERGES SUR DES SERVEURS AU QUEBEC, CANADA. EN UTILISANT LES SERVICES ET EN NOUS FOURNISSANT DES INFORMATIONS, VOUS CONSENTEZ AU TRANSFERT ET AU TRAITEMENT DES INFORMATIONS AU QUEBEC, CANADA.`,
         },
         {
           heading: 'Introduction',
-          body: `PRO ATHLETE inc., une société québécoise ("nous", "notre"), s'engage à protéger votre vie privée. Cette Politique de Confidentialité décrit comment nous collectons, utilisons, divulguons et protégeons vos informations personnelles collectées sur www.proathlete.ca et les applications mobiles et web de PRO ATHLETE en conformité avec la Loi 25 du Québec, ainsi que les lois internationales sur la protection des données, y compris le Règlement Général sur la Protection des Données ("RGPD") européen et le Règlement Général sur la Protection des Données du Royaume-Uni ("UK GDPR").`,
+          body: `PRO ATHLETE inc., une societe quebecoise ("nous", "notre"), s'engage a proteger votre vie privee. Cette Politique de Confidentialite decrit comment nous collectons, utilisons, divulguons et protegeons vos informations personnelles collectees sur www.proathlete.ca et les applications mobiles et web de PRO ATHLETE en conformite avec la Loi 25 du Quebec, ainsi que les lois internationales sur la protection des donnees.`,
         },
         {
           heading: 'Informations Que Nous Collectons',
@@ -135,78 +135,78 @@ VEUILLEZ NOTER QUE PRO ATHLETE ET TOUS LES SERVICES ET SYSTÈMES ASSOCIÉS SONT 
             {
               subheading: '1. Informations Personnelles :',
               bullets: [
-                'Coordonnées comprenant nom, adresse courriel, numéro de téléphone et adresse de livraison, adresse de facturation ;',
-                "Détails personnels comprenant le sexe, ville d'origine, date de naissance et historique des achats, informations de connexion et de compte, y compris nom d'utilisateur, mot de passe et identifiant utilisateur unique ;",
-                'Informations de santé et blessures (uniquement à des fins de recherche et de personnalisation).',
+                'Coordonnees comprenant nom, adresse courriel, numero de telephone et adresse de livraison, adresse de facturation ;',
+                "Details personnels comprenant le sexe, ville d'origine, date de naissance et historique des achats ;",
+                'Informations de sante et blessures (uniquement a des fins de recherche et de personnalisation).',
               ],
             },
             {
-              subheading: "2. Données d'Utilisation :",
+              subheading: "2. Donnees d'Utilisation :",
               bullets: [
-                "Activité de l'application ; incluant les programmes complétés, nombre d'exercices complétés, la durée de l'activité, la date des activités ;",
-                'Progression et complétion des programmes ;',
-                'Rétroactions et contenu généré par les utilisateurs.',
+                "Activite de l'application ; incluant les programmes completes, nombre d'exercices completes, la duree de l'activite, la date des activites ;",
+                'Progression et completion des programmes ;',
+                'Retroactions et contenu genere par les utilisateurs.',
               ],
             },
           ],
-          body: `Lors de l'interaction avec notre site web et nos applications, des données peuvent être automatiquement collectées et partagées avec PRO ATHLETE par les plateformes technologiques fournissant l'expérience. Ces données peuvent inclure : Identifiants d'appareil, état des appels, accès réseau, informations de stockage et informations sur la batterie, cookies, adresses IP, en-têtes de référence, données identifiant votre navigateur web et version, balises web et tags.`,
+          body: `Lors de l'interaction avec notre site web et nos applications, des donnees peuvent etre automatiquement collectees et partagees avec PRO ATHLETE par les plateformes technologiques fournissant l'experience. Ces donnees peuvent inclure : Identifiants d'appareil, etat des appels, acces reseau, informations de stockage et informations sur la batterie, cookies, adresses IP, en-tetes de reference, donnees identifiant votre navigateur web et version, balises web et tags.`,
         },
         {
           heading: 'Comment Nous Utilisons Vos Informations',
-          body: `Nous utilisons les données collectées aux fins suivantes :`,
+          body: `Nous utilisons les donnees collectees aux fins suivantes :`,
           bullets: [
-            "Pour personnaliser les programmes d'entraînement, de mobilité, de prévention et d'échauffement proposés dans l'application PRO ATHLETE ;",
-            "Pour améliorer l'expérience utilisateur et les fonctionnalités de l'application ;",
-            "Pour mener des recherches générales et des recherches sur l'efficacité de nos programmes en matière de prévention des blessures et d'amélioration des performances ;",
-            'Pour communiquer avec vous à propos des mises à jour, des promotions et des informations pertinentes sur PRO ATHLETE ;',
-            'Pour exploiter, améliorer et maintenir nos activités, produits et services ;',
-            'Pour protéger nos droits ou ceux des autres, la propriété intellectuelle ou la sécurité ;',
-            'Autres objectifs : Nous pouvons également utiliser vos données personnelles de manière différente et fournir un avis spécifique au moment de la collecte et obtenir votre consentement lorsque nécessaire.',
+            "Pour personnaliser les programmes d'entrainement, de mobilite, de prevention et d'echauffement proposes dans l'application PRO ATHLETE ;",
+            "Pour ameliorer l'experience utilisateur et les fonctionnalites de l'application ;",
+            "Pour mener des recherches generales et des recherches sur l'efficacite de nos programmes en matiere de prevention des blessures et d'amelioration des performances ;",
+            'Pour communiquer avec vous a propos des mises a jour, des promotions et des informations pertinentes sur PRO ATHLETE ;',
+            'Pour exploiter, ameliorer et maintenir nos activites, produits et services ;',
+            'Pour proteger nos droits ou ceux des autres, la propriete intellectuelle ou la securite ;',
+            'Autres objectifs : Nous pouvons egalement utiliser vos donnees personnelles de maniere differente et fournir un avis specifique au moment de la collecte et obtenir votre consentement lorsque necessaire.',
           ],
         },
         {
           heading: 'Partage de Vos Informations',
           bullets: [
-            "Avec Votre Entraîneur : Si vous êtes un athlète faisant partie d'une équipe, vos données générales d'activité et de progression seront partagées avec votre entraîneur pendant la durée de votre abonnement. Les informations sur les blessures ne seront pas partagées avec d'autres utilisateurs.",
-            "Avec un(e) professionnel(le) de la santé : Si vous êtes un(e) athlète et que vous travaillez directement avec un(e) professionnel(le) de la santé avec l'app PRO ATHLETE, vos données et informations peuvent être partagées avec cette personne afin d'améliorer l'expérience avec l'application et pour personnaliser la prescription d'exercices.",
-            'Fournisseurs de Services : Nous pouvons partager vos informations avec des fournisseurs de services tiers pour faciliter nos services, tels que le stockage et l'analyse de données et les solutions de paiement. Ces fournisseurs sont liés par des accords de confidentialité stricts.',
-            "Obligations Légales : Nous pouvons divulguer vos informations si la loi l'exige, ou pour protéger nos droits, notre vie privée, notre sécurité ou notre propriété, ainsi que ceux de vous ou d'autres.",
+            "Avec Votre Entraineur : Si vous etes un athlete faisant partie d'une equipe, vos donnees generales d'activite et de progression seront partagees avec votre entraineur pendant la duree de votre abonnement. Les informations sur les blessures ne seront pas partagees avec d'autres utilisateurs.",
+            "Avec un(e) professionnel(le) de la sante : Si vous etes un(e) athlete et que vous travaillez directement avec un(e) professionnel(le) de la sante avec l'app PRO ATHLETE, vos donnees et informations peuvent etre partagees avec cette personne afin d'ameliorer l'experience avec l'application et pour personnaliser la prescription d'exercices.",
+            'Fournisseurs de Services : Nous pouvons partager vos informations avec des fournisseurs de services tiers pour faciliter nos services, tels que le stockage et l\'analyse de donnees et les solutions de paiement. Ces fournisseurs sont lies par des accords de confidentialite stricts.',
+            "Obligations Legales : Nous pouvons divulguer vos informations si la loi l'exige, ou pour proteger nos droits, notre vie privee, notre securite ou notre propriete, ainsi que ceux de vous ou d'autres.",
           ],
         },
         {
-          heading: 'Confidentialité des Enfants',
-          body: `Nous collectons des informations personnelles auprès des utilisateurs de tous âges. SI VOUS AVEZ 16 ANS ET MOINS, VOUS CONFIRMEZ QUE VOUS AVEZ REÇU LE CONSENTEMENT D'UN PARENT OU TUTEUR LÉGAL POUR LA COLLECTE ET LE TRAITEMENT DES DONNÉES EN UTILISANT L'APPLICATION ET LES SITES WEB DE PRO ATHLETE.`,
+          heading: 'Confidentialite des Enfants',
+          body: `Nous collectons des informations personnelles aupres des utilisateurs de tous ages. SI VOUS AVEZ 16 ANS ET MOINS, VOUS CONFIRMEZ QUE VOUS AVEZ RECU LE CONSENTEMENT D'UN PARENT OU TUTEUR LEGAL POUR LA COLLECTE ET LE TRAITEMENT DES DONNEES EN UTILISANT L'APPLICATION ET LES SITES WEB DE PRO ATHLETE.`,
         },
         {
-          heading: 'Stockage et Sécurité des Données',
-          body: `Nous utilisons une variété de mesures de sécurité techniques et organisationnelles pour maintenir la sécurité de vos données personnelles. Vos données personnelles sont contenues derrière des réseaux sécurisés. Les données personnelles que nous collectons ou générons dans le cadre de nos Sites et Applications sont stockées dans le Centre de Données Google à Lachine, Québec, Canada.
+          heading: 'Stockage et Securite des Donnees',
+          body: `Nous utilisons une variete de mesures de securite techniques et organisationnelles pour maintenir la securite de vos donnees personnelles. Vos donnees personnelles sont contenues derriere des reseaux securises. Les donnees personnelles que nous collectons ou generons dans le cadre de nos Sites et Applications sont stockees dans le Centre de Donnees Google a Lachine, Quebec, Canada.
 
-Nous conservons vos données personnelles aussi longtemps que nécessaire pour atteindre les objectifs pour lesquels nous les collectons.`,
+Nous conservons vos donnees personnelles aussi longtemps que necessaire pour atteindre les objectifs pour lesquels nous les collectons.`,
         },
         {
           heading: 'Vos Droits',
-          body: `Vous avez le droit de demander : (i) l'accès à vos données personnelles ; (ii) la correction de vos données personnelles si elles sont incomplètes ou inexactes ; ou (iii) la suppression de vos données personnelles. Lorsque nous avons obtenu votre consentement pour le traitement de vos données personnelles, vous avez le droit de retirer votre consentement à tout moment. Vous avez également le droit de vous opposer au traitement de vos données personnelles, y compris de vous désinscrire de l'utilisation à des fins de marketing direct.`,
+          body: `Vous avez le droit de demander : (i) l'acces a vos donnees personnelles ; (ii) la correction de vos donnees personnelles si elles sont incompletes ou inexactes ; ou (iii) la suppression de vos donnees personnelles. Lorsque nous avons obtenu votre consentement pour le traitement de vos donnees personnelles, vous avez le droit de retirer votre consentement a tout moment.`,
         },
         {
           heading: 'Cookies et Balises Pixel',
-          body: `PRO ATHLETE reçoit et enregistre des informations, qui peuvent inclure des données personnelles, de votre navigateur lorsque vous utilisez nos Sites. Nous utilisons une variété de méthodes, telles que des cookies et des balises pixel pour collecter ces informations, qui peuvent inclure votre (i) adresse IP ; (ii) identifiant unique de cookie ; (iii) identifiant unique de l'appareil et type d'appareil ; (iv) domaine, type de navigateur et langue ; (v) système d'exploitation et paramètres système ; (vi) pays et fuseau horaire ; (vii) sites web précédemment visités ; (viii) informations sur votre interaction avec nos Sites ; et (ix) heures d'accès et URL de référence.
+          body: `PRO ATHLETE recoit et enregistre des informations, qui peuvent inclure des donnees personnelles, de votre navigateur lorsque vous utilisez nos Sites. Nous utilisons une variete de methodes, telles que des cookies et des balises pixel pour collecter ces informations, qui peuvent inclure votre (i) adresse IP ; (ii) identifiant unique de cookie ; (iii) identifiant unique de l'appareil et type d'appareil ; (iv) domaine, type de navigateur et langue ; (v) systeme d'exploitation et parametres systeme ; (vi) pays et fuseau horaire ; (vii) sites web precedemment visites ; (viii) informations sur votre interaction avec nos Sites ; et (ix) heures d'acces et URL de reference.
 
-Si vous désactivez les cookies, vous pouvez ne pas avoir accès à de nombreuses fonctionnalités qui rendent nos Sites et Applications plus efficaces et certains de nos services ne fonctionneront pas correctement.`,
+Si vous desactivez les cookies, vous pouvez ne pas avoir acces a de nombreuses fonctionnalites qui rendent nos Sites et Applications plus efficaces et certains de nos services ne fonctionneront pas correctement.`,
         },
         {
           heading: 'Utilisation des Sites et Applications PRO ATHLETE avec des Produits et Services Tiers',
-          body: `Nos Sites et Applications vous permettent d'interagir avec une grande variété d'autres produits et services numériques. Si vous choisissez de connecter votre compte PRO ATHLETE à un appareil ou compte tiers, vos droits de confidentialité sur les plateformes tierces seront régis par leurs politiques respectives.`,
+          body: `Nos Sites et Applications vous permettent d'interagir avec une grande variete d'autres produits et services numeriques. Si vous choisissez de connecter votre compte PRO ATHLETE a un appareil ou compte tiers, vos droits de confidentialite sur les plateformes tierces seront regis par leurs politiques respectives.`,
         },
         {
-          heading: 'Modifications de Cette Politique de Confidentialité',
-          body: `Nous pouvons mettre à jour notre Politique de Confidentialité de temps en temps. Nous vous informerons de toute modification en publiant la nouvelle Politique de Confidentialité sur cette page.`,
+          heading: 'Modifications de Cette Politique de Confidentialite',
+          body: `Nous pouvons mettre a jour notre Politique de Confidentialite de temps en temps. Nous vous informerons de toute modification en publiant la nouvelle Politique de Confidentialite sur cette page.`,
         },
         {
           heading: 'Contactez-Nous',
-          body: `Si vous avez des questions concernant cette Politique de Confidentialité, veuillez nous contacter :
+          body: `Si vous avez des questions concernant cette Politique de Confidentialite, veuillez nous contacter :
 
 Email : support@proathlete.com
-Adresse : 1202 Bélanger, Montréal, Québec, Canada, H2S 1H8`,
+Adresse : 1202 Belanger, Montreal, Quebec, Canada, H2S 1H8`,
         },
       ],
     },
@@ -216,7 +216,6 @@ Adresse : 1202 Bélanger, Montréal, Québec, Canada, H2S 1H8`,
 
   return (
     <div className="fixed inset-0 z-[300] bg-[#002337] overflow-y-auto">
-      {/* Close button */}
       <button
         onClick={onClose}
         className="fixed top-6 right-6 z-10 text-white/70 hover:text-white transition-colors bg-[#002337]/80 backdrop-blur-sm rounded-full p-2"
