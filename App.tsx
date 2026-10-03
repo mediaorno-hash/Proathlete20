@@ -117,7 +117,7 @@ const App: React.FC = () => {
   
   const t = translations[lang];
 
-  const APPLE_STORE_URL = "https://apps.apple.com/ca/app/pro-athlete/id1478125720";
+  const APPLE_STORE_URL = "https://apps.apple.com/ca/app/pro-athlete-training-app/id6768344217";
   const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=ca.proathlete.proathlete&hl=en_CA";
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
